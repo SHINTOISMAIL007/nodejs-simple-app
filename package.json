@@ -1,11 +1,11 @@
 {
-  "name": "nodejs-rest-api-example",
+  "name": "nodejs-simple-app",
   "version": "1.0.0",
   "description": "Example of Node.js REST API on Docker",
-  "author": "Petteri Kivimäki <dinky_jackson@hotmail.com.com>",
+  "author": "Shinto ismail <abc@gmail.com>",
   "main": "server.js",
   "license": "MIT",
-  "repository": "https://github.com/petkivim/nodejs-rest-api-example.git",
+  "repository": "https://github.com/SHINTOISMAIL007/nodejs-simple-app.git",
   "scripts": {
     "start": "node server.js"
   },
