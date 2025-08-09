@@ -2,11 +2,11 @@
 
 This example shows how to implement a simple REST API using Node.js and Docker. The API has five endpoints that all return a simple response in JSON.
 
-* GET /
+* GET /user
 * GET /:id
-* POST /
-* PUT /
-* DELETE /
+* POST /others
+* PUT /service
+* DELETE /payment
 
 ## Build
 
@@ -28,7 +28,7 @@ docker run -e PORT=8080 -p 8080:8080 -d nodejs-rest-api-example
 
 ## Test
 
-#### GET /
+#### GET /user
 
 ```
 curl -i http://localhost:4000/
@@ -58,7 +58,7 @@ Transfer-Encoding: chunked
 {"response":"This is GET method with id=123."}
 ```
 
-#### POST /
+#### POST /others
 
 ```
 curl -i -X POST http://localhost:4000
@@ -73,7 +73,7 @@ Transfer-Encoding: chunked
 {"response":"This is POST method."}
 ```
 
-#### PUT /
+#### PUT /service
 
 ```
 curl -i -X PUT http://localhost:4000
@@ -88,7 +88,7 @@ Transfer-Encoding: chunked
 {"response":"This is PUT method."}
 ```
 
-#### DELETE /
+#### DELETE /payment
 
 ```
 curl -i -X DELETE http://localhost:4000
